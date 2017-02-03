@@ -9,6 +9,10 @@ package PatternDemo_Lab2;
  *
  * @author SCM
  */
-public class Monitor {
-    
+class Monitor implements ComputterPart {
+     //public void accept(){};
+     @Override
+     public void accept(ComputerPartVisitor computerPartVisitor){
+     computerPartVisitor.visit(this);
+     }
 }

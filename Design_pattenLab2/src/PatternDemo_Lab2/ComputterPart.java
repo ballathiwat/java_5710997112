@@ -9,6 +9,7 @@ package PatternDemo_Lab2;
  *
  * @author SCM
  */
-public class ComputterPart {
-    
+public interface ComputterPart {
+   
+    public void accept(ComputerPartVisitor computerPartVisitor);
 }

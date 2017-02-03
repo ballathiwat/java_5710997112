@@ -9,6 +9,14 @@ package PatternDemo_Lab2;
  *
  * @author SCM
  */
-public class Mouse {
-    
+public class Mouse implements ComputterPart{
+   
+    /**
+     *
+     * @param computerPartVisitor
+     */
+    @Override
+    public void accept(ComputerPartVisitor computerPartVisitor) {
+    computerPartVisitor.visit(this);
+    }
 }

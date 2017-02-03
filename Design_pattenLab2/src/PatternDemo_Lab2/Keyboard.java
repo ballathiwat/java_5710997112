@@ -9,6 +9,14 @@ package PatternDemo_Lab2;
  *
  * @author SCM
  */
-public class Keyboard {
-    
+public class Keyboard implements ComputterPart{
+
+    /**
+     *
+     * @param computerPartVisitor
+     */
+    @Override
+    public void accept(ComputerPartVisitor computerPartVisitor){
+    computerPartVisitor.visit(this);
+    };
 }
